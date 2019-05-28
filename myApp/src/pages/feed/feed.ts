@@ -14,7 +14,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'feed.html',
 })
 export class FeedPage {
-  public nome_usuario:string = "Charles Granca do Codigo";
+  public objeto_feed ={
+    titulo:"Fabim Beleza",
+    data: "November 7, 1990",
+    descricao:"Blezera pura",
+    qntd_likes:12,
+    qntd_comments:4,
+    time_comment:"11h ago"
+  }
 
   public somaDoisNumeros(num1:number, num2:number):void{
     alert(num1 + num2);
