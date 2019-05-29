@@ -54,3 +54,7 @@
     <button ion-button block (click)="abrirDetalhes(filme)">Detalhes</button>
   </ion-card>
 </ion-content>
+
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
