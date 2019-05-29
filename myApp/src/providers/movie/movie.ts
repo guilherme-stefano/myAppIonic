@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
@@ -10,13 +10,21 @@ import { Observable } from 'rxjs/Observable';
 */
 @Injectable()
 export class MovieProvider {
-
-  constructor(public http: HttpClient) {
-    console.log('Hello MovieProvider Provider');
+  private baseApiPath = "https://api.themoviedb.org/3";
+  constructor(public http: Http) {
+    
   }
 
   getLatestMovies(){
-    return this.http.get("http://.....")
+    return this.http.get(this.baseApiPath + "/movie/latest?api_key=" + this.getApiKey());
+  }
+
+  getPoupular(){
+    return this.http.get(this.baseApiPath + "/movie/popular?api_key=" + this.getApiKey());
+  }
+
+  getApiKey(): string {
+    return "aqui não champs";
   }
 
 }

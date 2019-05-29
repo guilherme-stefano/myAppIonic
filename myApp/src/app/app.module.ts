@@ -14,6 +14,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { FeedPageModule } from '../pages/feed/feed.module';
 import { IntroPageModule } from '../pages/intro/intro.module';
 import { MovieProvider } from '../providers/movie/movie';
+import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.module';
+import { PerfilPageModule } from '../pages/perfil/perfil.module';
+import { SobrePageModule } from '../pages/sobre/sobre.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { MovieProvider } from '../providers/movie/movie';
     IonicModule.forRoot(MyApp),
     FeedPageModule,
     IntroPageModule,
-    HttpModule
+    HttpModule,
+    ConfiguracoesPageModule,
+    PerfilPageModule,
+    SobrePageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,8 +47,7 @@ import { MovieProvider } from '../providers/movie/movie';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    MovieProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
