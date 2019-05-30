@@ -47,11 +47,6 @@ export class FeedPage {
     this.isRefreshing = true;
     this.carregaFilmes();
   }
-  
-
-  public somaDoisNumeros(num1:number, num2:number):void{
-    alert(num1 + num2);
-  }
 
 
   abreCarregando() {

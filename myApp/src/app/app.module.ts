@@ -18,6 +18,7 @@ import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.mo
 import { PerfilPageModule } from '../pages/perfil/perfil.module';
 import { SobrePageModule } from '../pages/sobre/sobre.module';
 import { FilmeDetalhesPageModule } from '../pages/filme-detalhes/filme-detalhes.module';
+import { AlertasPageModule } from '../pages/alertas/alertas.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FilmeDetalhesPageModule } from '../pages/filme-detalhes/filme-detalhes.
     ConfiguracoesPageModule,
     PerfilPageModule,
     SobrePageModule,
-    FilmeDetalhesPageModule
+    FilmeDetalhesPageModule,
+    AlertasPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

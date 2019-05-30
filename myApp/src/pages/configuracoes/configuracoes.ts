@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PerfilPage } from '../perfil/perfil';
 import { SobrePage } from '../sobre/sobre';
+import { AlertasPage } from '../alertas/alertas';
 
 /**
  * Generated class for the ConfiguracoesPage page.
@@ -26,6 +27,10 @@ export class ConfiguracoesPage {
 
   abrirPerfil(){
     this.navCtrl.push(PerfilPage);
+  }
+
+  abrirFoto(){
+    this.navCtrl.push(AlertasPage);
   }
 
   abrirSobre(){
